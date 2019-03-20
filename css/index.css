@@ -132,16 +132,44 @@ table {
 }
 html,
 body {
-  max-width: 95%;
-  margin: 0 auto;
   height: 100%;
 }
-
+body {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
 nav {
   display: flex;
-  width: 100%;
   justify-content: space-around;
-  
+  align-items: center;
 }
-
-
+nav a {
+  text-decoration: none;
+  color: gray;
+}
+.aboutMe {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background: #dddddd;
+}
