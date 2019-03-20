@@ -58,6 +58,8 @@ html, body {
 }
 
 @gap: 30px auto;
+@neutral: lightgray;
+@wide: 50%;
 
 .deskTop () {
 	width: 95%;
@@ -86,6 +88,18 @@ html, body {
 	padding: 8px;
 }
 
+.imageCenter () {
+	width: 90%;
+	margin: 30px auto;
+}
+
+.textBox () {
+	.column;
+	width: @wide;
+	font-size: 1.5rem;
+	margin: 30px 10px;
+}
+
 body {
 	.deskTop;
 }
@@ -100,35 +114,66 @@ nav {
 
 }
 
+.show {
+	background: @neutral;
+
+	.showcase {
+		.column;
+	}
+
+	img {
+		.imageCenter;
+	}
+
+	h1{
+		font-size: 3rem;
+		text-align: center
+	}
+}
+
 .aboutMe {
 	display: flex;
 	width: 100%;
 	margin: 0 auto;
+
+	.intro {
+		.textBox;
+	}
+
+	.skills{
+		.textBox;
+
+		li {
+			.table;
+		}
+	}
 }
 
-.intro {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
+.workHistory {
+	margin: 40px auto;
+
+	table {
+		font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		width: 100%;
+	
+		th {
+			.table;
+		}
+	
+		td {
+			.table;
+			background: #dddddd;
+		}
+		  
+	}
+	
+}
+
+.contact {
+	.column;
+	margin: 40px auto;
 	font-size: 1.5rem;
 }
 
-table {
-	font-family: arial, sans-serif;
-  	border-collapse: collapse;
-	width: 100%;
 
-	th {
-		.table;
-	}
-
-	td {
-		.table;
-		background: #dddddd;
-	}
-	  
-}
-
-.show {
-	background: #ddd;
-}

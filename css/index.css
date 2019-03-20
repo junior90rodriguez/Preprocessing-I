@@ -149,33 +149,67 @@ nav a {
   text-decoration: none;
   color: gray;
 }
+.show {
+  background: lightgray;
+}
+.show .showcase {
+  display: flex;
+  flex-direction: column;
+}
+.show img {
+  width: 90%;
+  margin: 30px auto;
+}
+.show h1 {
+  font-size: 3rem;
+  text-align: center;
+}
 .aboutMe {
   display: flex;
   width: 100%;
   margin: 0 auto;
 }
-.intro {
+.aboutMe .intro {
   display: flex;
   flex-direction: column;
   width: 50%;
   font-size: 1.5rem;
+  margin: 30px 10px;
 }
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
+.aboutMe .skills {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.5rem;
+  margin: 30px 10px;
 }
-table th {
+.aboutMe .skills li {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
-table td {
+.workHistory {
+  margin: 40px auto;
+}
+.workHistory table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.workHistory table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.workHistory table td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
   background: #dddddd;
 }
-.show {
-  background: #ddd;
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  font-size: 1.5rem;
 }
