@@ -143,6 +143,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 30px auto;
 }
 nav a {
   text-decoration: none;
