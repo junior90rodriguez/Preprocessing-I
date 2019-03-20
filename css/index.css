@@ -156,6 +156,8 @@ nav a {
 .intro {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  font-size: 1.5rem;
 }
 table {
   font-family: arial, sans-serif;
@@ -172,4 +174,7 @@ table td {
   text-align: left;
   padding: 8px;
   background: #dddddd;
+}
+.show {
+  background: #ddd;
 }
