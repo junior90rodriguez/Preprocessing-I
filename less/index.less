@@ -57,3 +57,123 @@ html, body {
     height: 100%;
 }
 
+@gap: 30px auto;
+@neutral: lightgray;
+@wide: 50%;
+
+.deskTop () {
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+}
+.decoration () {
+	text-decoration: none;
+	color: gray;
+}
+
+.navStyle () {
+	display: flex;
+	justify-content: space-around;
+	align-items: center
+}
+
+.column () {
+	display: flex;
+	flex-direction: column;
+}
+
+.table () {
+	border: 1px solid#dddddd;
+  	text-align: left;
+	padding: 8px;
+}
+
+.imageCenter () {
+	width: 90%;
+	margin: 30px auto;
+}
+
+.textBox () {
+	.column;
+	width: @wide;
+	font-size: 1.5rem;
+	margin: 30px 10px;
+}
+
+body {
+	.deskTop;
+}
+
+nav {
+	.navStyle;
+	margin:	@gap;
+	
+	a {
+		.decoration;
+	}
+
+}
+
+.show {
+	background: @neutral;
+
+	.showcase {
+		.column;
+	}
+
+	img {
+		.imageCenter;
+	}
+
+	h1{
+		font-size: 3rem;
+		text-align: center
+	}
+}
+
+.aboutMe {
+	display: flex;
+	width: 100%;
+	margin: 0 auto;
+
+	.intro {
+		.textBox;
+	}
+
+	.skills{
+		.textBox;
+
+		li {
+			.table;
+		}
+	}
+}
+
+.workHistory {
+	margin: 40px auto;
+
+	table {
+		font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		width: 100%;
+	
+		th {
+			.table;
+		}
+	
+		td {
+			.table;
+			background: #dddddd;
+		}
+		  
+	}
+	
+}
+
+.contact {
+	.column;
+	margin: 40px auto;
+	font-size: 1.5rem;
+}
+
+

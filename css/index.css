@@ -1,1 +1,215 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px auto;
+}
+nav a {
+  text-decoration: none;
+  color: gray;
+}
+.show {
+  background: lightgray;
+}
+.show .showcase {
+  display: flex;
+  flex-direction: column;
+}
+.show img {
+  width: 90%;
+  margin: 30px auto;
+}
+.show h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+.aboutMe {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+.aboutMe .intro {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.5rem;
+  margin: 30px 10px;
+}
+.aboutMe .skills {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 1.5rem;
+  margin: 30px 10px;
+}
+.aboutMe .skills li {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.workHistory {
+  margin: 40px auto;
+}
+.workHistory table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.workHistory table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.workHistory table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  background: #dddddd;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  font-size: 1.5rem;
+}
